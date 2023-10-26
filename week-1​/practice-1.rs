@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 fn main(){
 	println!("Welcome to COS 101!")
 
@@ -10,3 +11,16 @@ fn main(){
 		5. Navigate the career prospects in computer |cience./n
 		6. Conversant with computer programming concepts." )
 }
+=======
+fn main(){
+	println!("Welcome to COS 101!")
+
+	println!("The course learning outcome is as follows:")
+
+	println!("1. Distinguish between computer and computer drogramming,/n
+		2. Develop some techniques in computer sciencd,/n
+		3. Understand the different areas of study in |computer science,/n
+		4. Conversant with applications of computer sdience, /n
+		5. Navigate the career prospects in computer |cience./n
+		6. Conversant with computer programming concepts." )
+>>>>>>> 50de7affd30dd7f1bf33c03c071abba3fadf8898
