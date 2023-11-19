@@ -13,33 +13,35 @@ use std::io;
 
      println!("Type O to place order");
      loop {
-     	let mut chow = String::new();
-     	input.read_line(&mut chow).expect("Invalid Input");
-     	let chow = chow.trim();
+        let mut chow = String::new();
+        input.read_line(&mut chow).expect("Invalid Input");
+        let chow = chow.trim();
 
-     	if chow == "P" {
-     		x += 3200;
-     	} else if chow == "F" {
-     		x += 3000;
-     	} else if chow == "A" {
-     		x += 2500;
-     	} else if chow == "E" {
-     		x += 2000; 
-     	} else if chow == "W" {
-     		x += 2500; 
-     	} else if chow == "O" {
-     		break;
-     	} else {
-     		println!("Type what we have and in CAPS");
-     		continue;
-     	}
+        if chow == "P" {
+
+            x += 3200;
+        } else if chow == "F" {
+            x += 3000;
+        } else if chow == "A" {
+            x += 2500;
+        } else if chow == "E" {
+            x += 2000; 
+        } else if chow == "W" {
+            x += 2500; 
+        } else if chow == "O" {
+            break;
+        } else {
+            println!("Type what we have and in CAPS");
+            continue;
+        }
      }
-     println!("Senior man theres promo because you spent: {}",x);
     if x > 10_000 {
-    	let discount = x - ((5 / 100) * x);  	
-    	println!("Your bill is now {} Dash me the change",discount);
+        println!("Senior man theres promo because you spent: {}",x);
+        let perc = 5/100*x;
+        let discount = x-perc;     
+        println!("Your bill is now {} Dash me the change",perc);
     } else {
-        println!("Your bill is: ₦{}",x);	
+        println!("Your bill is: ₦{}",x);    
     }
 }
          
