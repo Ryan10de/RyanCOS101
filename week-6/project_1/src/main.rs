@@ -4,7 +4,7 @@ fn main() {
     let mut count = 0;
 
     loop {
-        if count >= 500 {
+        if count >= 150 {
             println!("Voting has ended.");
             break;
         }
