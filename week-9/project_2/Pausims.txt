@@ -1,0 +1,6 @@
+	PAU SMIS	
+STUDENT NAME				MATRIC. NUMBER			DEPARTMENT			LEVEL	
+Oluchi Mordi
+			ACC1018
+Accounting
+300
